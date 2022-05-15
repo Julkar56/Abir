@@ -48,13 +48,6 @@ def helpnote():
 	exit(" [*] TELEGRAM GROUP : https://t.me/techhelpzone")
 
 
-def notice():
-	runtxt("\n\033[0;91m YOU ARE NOT PREMIUM USER ")
-	runtxt("\033[0;93m SEND THIS KEY TO ADMIN >> %s%s"%(G,basesplit))
-	runtxt("\033[0;92m ADMIN TELEGRAM ID >> @EsanAhmedAbir")
-	subprocess.check_output(["am", "start", "https://t.me/EsanAhmedAbir"])
-
-
         
 plist = (platform.uname())[2]
 basex = plist
@@ -72,15 +65,7 @@ class Main:
 		self.cp = []
 		self.loop = 0
 		try:
-			plr = requests.get('https://raw.githubusercontent.com/RayhanAhmedAbir/Raje/main/a.txt').text
-			if basesplit in plr:
-				key = basesplit
-				stat = ("\033[0;92mPREMIUM")
-				FY = '\033[0;93m'
-				FG = '\033[0;92m'
-				GET = '\r'
-			else:
-				key = ("\033[0;91m -")
+			
 				stat = ("\033[0;91mFREE USER")
 				FY = '\033[0;90m'
 				FG = '\033[0;90m'
